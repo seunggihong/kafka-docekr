@@ -15,7 +15,7 @@ print('[begin] start sending message from producer')
 
 for i in range(10000):
     data = {'str' : 'result' + str(i)}
-    print('sending message...')
+    print('sending message...'+data['str'])
     producer.send(topic_name, value=data)
     producer.flush()
-print('[end] time taken')
+print('[end] time taken', time.time() - start)
