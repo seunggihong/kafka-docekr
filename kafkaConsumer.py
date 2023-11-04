@@ -2,7 +2,7 @@ from kafka import KafkaConsumer
 from json import loads
 import time
 
-topic_name = "topic_test"
+topic_name = 'topic_test'
 consumer = KafkaConsumer(
     topic_name,
     bootstrap_servers=['localhost:9092'],
