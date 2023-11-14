@@ -2,12 +2,12 @@
 
 ## version
 
-- docker : 24.0.6
-- python3 : 3.6.9
-- kafka : 3.6.0
-- zookeeper: 3.4.6
+![Static Badge](https://img.shields.io/badge/docker-24.0.6-%232496ED?logo=docker&logoColor=white&color=%232496ED)
+![Static Badge](https://img.shields.io/badge/python-3.6.9-blue?logo=python&logoColor=white&color=%233776AB)
+![Static Badge](https://img.shields.io/badge/kafka-3.6.0-%23231F20?logo=apachekafka&logoColor=white&color=%23231F20)
+![Static Badge](https://img.shields.io/badge/zookeeper-3.4.6-%23D22128?logo=apache&logoColor=white&color=%23D22128)
 
-  <a href = https://dlcdn.apache.org/kafka/3.6.0/kafka_2.13-3.6.0.tgz>Kafka download</a>
+<a href = https://dlcdn.apache.org/kafka/3.6.0/kafka_2.13-3.6.0.tgz>Kafka download</a>
 
 #
 
