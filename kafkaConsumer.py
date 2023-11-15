@@ -1,11 +1,19 @@
 from kafka import KafkaConsumer
 import time
+from dotenv import load_dotenv
+import os
 
-topic_name = 'topic_test'
+load_dotenv()
+
+TOPIC_NAME = os.getenv("TOPIC_NAME")
+GROUP_ID = os.getenv("GROUP_ID")
+PORT = os.getenv("PORT")
+
+topic_name = TOPIC_NAME
 consumer = KafkaConsumer(
     topic_name,
-    bootstrap_servers=['localhost:9092'],
-    group_id='my-group'
+    bootstrap_servers=[PORT],
+    group_id=GROUP_ID
 )
 
 start = time.time()
