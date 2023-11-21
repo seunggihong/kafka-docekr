@@ -32,8 +32,9 @@ if __name__ == '__main__':
         while (True):
             price, ath_date = call_bitcoin(url)
             print('sending message...')
+            data = f'bitcoin price : {price}, bitcoin ath date : {ath_date}'
             producer.send(
-                topic_name, 'bitcoin price : {price}, bitcoin ath date : {ath_date}'.encode('utf-8'))
+                topic_name, data.encode('utf-8'))
             producer.flush()
             time.sleep(3)
     except KeyboardInterrupt:
